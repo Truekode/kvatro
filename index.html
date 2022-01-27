@@ -9,8 +9,18 @@
 </head>
 <body>
     <header class="header container">
-        <video src="./src/video.mp4" autoplay loop preload="metadata" width="100%"></video>
+        <video src="./src/video.mp4" autoplay loop muted preload="metadata" width="100%" id="vid"></video>
         <img src="./src/123.jpg" alt="" width="100%">
+        <nav class="header__nav">
+            <a class="header__link" href="#">stock</a>
+            <a class="header__link" href="#">reviews</a>
+            <a class="header__link" href="#">tos</a>
+            <a class="header__link" href="#">contacts</a>
+            <a class="header__link" href="#">pr</a>
+        </nav>
     </header>
+    <script>
+        document.getElementById('vid').play();
+    </script>
 </body>
 </html>

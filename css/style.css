@@ -101,8 +101,29 @@ body {
   }
 }
 .header {
+  cursor: url("../src/cursor.png"), url("../src/cursor.cur"), auto;
   display: flex;
   flex-direction: column;
+}
+
+.header__nav {
+  height: 88px;
+  margin-top: -121px;
+  border-top: 1px solid #787878;
+  display: flex;
+  grid-column-gap: 5%;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.header__link {
+  cursor: url("../src/cursor.png"), url("../src/cursor.cur"), auto;
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: purple;
+  font-size: 1.5em;
 }
 
 /*# sourceMappingURL=style.css.map */

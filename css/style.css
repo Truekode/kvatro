@@ -101,12 +101,12 @@ body {
   }
 }
 .header {
-  cursor: url("../src/cursor.png"), url("../src/cursor.cur"), auto;
   display: flex;
   flex-direction: column;
 }
 
 .header__nav {
+  cursor: url("../src/cursor1.png"), url("http://localhost:63342/OOO/css/cursor.cur"), auto;
   height: 88px;
   margin-top: -121px;
   border-top: 1px solid #787878;
@@ -118,7 +118,12 @@ body {
 }
 
 .header__link {
-  cursor: url("../src/cursor.png"), url("../src/cursor.cur"), auto;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: inherit;
   display: block;
   text-transform: uppercase;
   text-decoration: none;

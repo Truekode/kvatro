@@ -1,0 +1,28 @@
+.footer {
+  background: black;
+  color: white;
+  margin-top: 60px;
+
+  &__wrp {
+    width: 70%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+  }
+
+  &__list-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 19px;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.4em;
+  }
+
+  &__list > li {
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.7em;
+    font-weight: 500;
+  }
+}

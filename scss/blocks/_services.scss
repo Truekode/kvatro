@@ -1,0 +1,33 @@
+.services {
+  background: rgba(241, 241, 241, 0.87);
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+
+  &__wrp  {
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    list-style-type: square;
+  }
+
+  &__item {
+    margin-top: 20px;
+    @include font(19px,19px,300);
+    margin-left: 50px;
+  }
+
+  &__text {
+    margin-top: 30px;
+    text-align: center;
+    width: 70%;
+  }
+
+}

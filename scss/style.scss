@@ -2,35 +2,11 @@
 @import "./mixins";
 @import "./reset";
 @import "./general";
-
-.header {
-  display: flex;
-  flex-direction: column;
-}
-
-.header__nav {
-  cursor: url('../src/cursor1.png'), url('http://localhost:63342/OOO/css/cursor.cur'), auto;
-  height: 88px;
-  margin-top: -121px;
-  border-top: 1px solid #787878;
-  display: flex;
-  grid-column-gap: 5%;
-  justify-content: center;
-  box-sizing: border-box;
-  align-items: center;
-}
-
-.header__link {
-  cursor: url('../src/cursor1.png'), url('http://localhost:63342/OOO/css/cursor.cur'), auto;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-  cursor: inherit;
-  display: block;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: purple;
-  font-size: 1.5em;
-}
+@import "./blocks/header";
+@import "./blocks/baner";
+@import "./blocks/benefits";
+@import "./blocks/price";
+@import "./blocks/services";
+@import "./blocks/about";
+@import "./blocks/contact";
+@import "./blocks/footer";

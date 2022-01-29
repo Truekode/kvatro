@@ -1,28 +1,567 @@
 <!doctype html>
-<html lang="en">
+<html lang="q">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <title>ООО КВАТРО</title>
 </head>
 <body>
     <header class="header container">
-        <video src="./src/video.mp4" autoplay loop muted preload="metadata" width="100%" id="vid"></video>
-        <img src="./src/123.jpg" alt="" width="100%">
-        <nav class="header__nav">
-            <a class="header__link" href="#">stock</a>
-            <a class="header__link" href="#">reviews</a>
-            <a class="header__link" href="#">tos</a>
-            <a class="header__link" href="#">contacts</a>
-            <a class="header__link" href="#">pr</a>
-        </nav>
+        <h2>OOO "КВАТРО"</h2>
+        <section class="header__wrp">
+            <nav class="header__nav">
+                <a href="#" class="header__link">Услуги</a>
+                <a href="#" class="header__link">О компании</a>
+                <a href="#" class="header__link">Прайс</a>
+                <a href="#" class="header__link">Контакты</a>
+            </nav>
+            <ul class="header__list">
+                <li><a href="#" class="header__link header__phone">8 (927) 275-50-54</a></li>
+                <li><a href="#" class="header__link header__mail">kvatrorm@mail.ru</a></li>
+            </ul>
+        </section>
     </header>
-    <h2 style="text-align: center">Свяжитесь со мной 79961241457</h2>
-    <script>
-        document.getElementById('vid').play();
-        document.getElementById("vid").style.cursor="url('./src/cursor.cur')";
-    </script>
+    <main>
+        <section class="baner">
+            <h2 class="visually-hidden">оценка и экспертиза</h2>
+            <div class="baner__wrp container">
+                <h1 class="baner__title">Независимая оценка <br> и экспертиза</h1>
+                <p class="baner__text">Бюро судебных экспертиз ООО «Кватро» является негосударственным судебно-экспертным учреждением, выполняющим работы по большинству из востребованных направлений экспертизы и оценки на всей территории Республики Мордовия и других регионов
+                </p>
+                <ul class="baner__list">
+                    <li class="baner__item">Бесплатная консультация</li>
+                    <li class="baner__item">Экономия Вашего времени</li>
+                    <li class="baner__item">Дальнейшее сопровождение</li>
+                    <li class="baner__item">Находимся в Саранске, работаем по всей Мордовии</li>
+                </ul>
+                <button type="button" class="baner__btn">Оставить заявку</button>
+            </div>
+        </section>
+        <section class="benefits container">
+            <h2 class="benefits__title">Наши преимущества по оценке и экспертизе в Саранске и Мордовии</h2>
+            <ul class="benefits__list">
+                <li class="benefits__item">
+                    <i class="fa fa-calculator fa__icons"></i>
+                    <h3 class="benefits__item-title">Бесплатная консультация</h3>
+                    <p class="benefits__item-text">При обращении заказчика мы даем бесплатную первичную консультацию и делаем предварительный расчет.</p>
+                </li>
+                <li class="benefits__item">
+                    <i class="fa fa-clock-o fa__icons"></i>
+                    <h3 class="benefits__item-title">Экономия Вашего времени</h3>
+                    <p class="benefits__item-text">Если оценка необходима Вам срочно, то мы готовы отложить в сторону все дела и приступить к этой работе.</p>
+                </li>
+                <li class="benefits__item">
+                    <i class="fa fa-black-tie fa__icons"></i>
+                    <h3 class="benefits__item-title">Дальнейшее сопровождение</h3>
+                    <p class="benefits__item-text">Мы никуда не пропадаем и можем при необходимости внести изменения в отчет или защитить его в суде.</p>
+                </li>
+                <li class="benefits__item">
+                    <i class="fa fa-line-chart fa__icons"></i>
+                    <h3 class="benefits__item-title">опыт</h3>
+                    <p class="benefits__item-text">Мы предоставляем юридические услуги с 2008 года. Состоим в реестре судов общей юрисдикции и в арбитражных судах.</p>
+                </li>
+                <li class="benefits__item">
+                    <i class="fa fa-balance-scale fa__icons"></i>
+                    <h3 class="benefits__item-title">законность</h3>
+                    <p class="benefits__item-text">Процедура экспертизы проходит в соответствии с требованиями. Заключение составляется по всем правилам и не содержит ошибок.</p>
+                </li>
+                <li class="benefits__item">
+                    <i class="fa fa-file-text-o fa__icons"></i>
+                    <h3 class="benefits__item-title">объективность и независимость</h3>
+                    <p class="benefits__item-text">Мы учитываем особенности ситуации. Вы получаете объективный и независимый результат, который используете в качестве доказательства.</p>
+                </li>
+                <li class="benefits__item">
+                    <i class="fa fa-gavel  fa__icons"></i>
+                    <h3 class="benefits__item-title">честность</h3>
+                    <p class="benefits__item-text">Мы соблюдаем принципы адвокатской тайны и гарантируем своим клиентам полную конфиденциальность.</p>
+                </li>
+                <li class="benefits__item">
+                    <i class="fa fa-address-card-o fa__icons"></i>
+                    <h3 class="benefits__item-title">профессионализм</h3>
+                    <p class="benefits__item-text">Если вы сомневаетесь в результатах проведенной ранее экспертизы, мы изучим заключение, выявим ошибки и нарушения.</p>
+                </li>
+                <li class="benefits__item">
+                    <i class="fa fa-bolt fa__icons"></i>
+                    <h3 class="benefits__item-title">скорость</h3>
+                    <p class="benefits__item-text">Четко организованная работа экспертов позволяет провести независимую экспертизу в короткие сроки: от 1 до 10 рабочих дней.</p>
+                </li>
+            </ul>
+        </section>
+        <section class="price container">
+            <h2 class="benefits__title">Цены на услуги независимой оценки и экспертизы</h2>
+            <ul class="price__list">
+                <li class="price__item">
+                    <details open>
+                        <summary class="price__item-title">
+                            <p>Оценка квартиры</p>
+                            <ul class="price__wrp">
+                                <li class="price__wrp-item"><p>для ипотеки</p> <p class="price__subtitle">от 1 500 руб.</p></li>
+                                <li class="price__wrp-item"><p>для суда</p> <p class="price__subtitle">от 2 500 руб.</p></li>
+                                <li class="price__wrp-item"><p>для продажи</p> <p class="price__subtitle">от 2 000 руб.</p></li>
+                                <li class="price__wrp-item"><p>для наследства</p> <p class="price__subtitle">от 1 500 руб.</p></li>
+                            </ul>
+                        </summary>
+                        <p class="price__item-text">Окончательная цена зависит от объёма работ и удаленности объекта от Саранска. Возможна работа без выезда (отправка и получение документов по почте).
+                            <br>
+
+                            Эксперт нашей компании является аккредитованным оценщиком-партнером Сбербанка (ипотека и т.д.).
+                            <br>
+
+                            Мы выполняем оценку новостроек и вторичного жилья, оценку комнаты и долей в квартире. Проведенная нами независимая оценка предоставляется в различные банки, органы опеки и попечительства, суды, нотариусам и т.д.
+                            <br>
+
+                            По всем подготовленным нами отчетам об оценке мы оказываем дальнейшее сопровождение: при необходимости вносим корректировки и защищаем в судах и т.д.</p>
+                        <p class="price__item-text">Срок: <span class="price__subtitle">от 1-2 дня.</span></p>
+                        <h4 class="price-doc__title">Документы для проведения оценки</h4>
+                        <p class="price__item-text">Для того, чтобы начать работу по оценке квартиры, мы просим заказчика предоставить следующие документы (при наличии):</p>
+                        <ul class="price-doc__list">
+                            <li class="price-doc__item price__subtitle">Свидетельство о государственной регистрации права</li>
+                            <li class="price-doc__item  price__subtitle">Договор купли-продажи</li>
+                            <li class="price-doc__item  price__subtitle">Выписка из ЕГРН</li>
+                            <li class="price-doc__item  price__subtitle">Технический паспорт</li>
+                            <li class="price-doc__item  price__subtitle">Технический план</li>
+                            <li class="price-doc__item  price__subtitle">Кадастровый паспорт</li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="price__item">
+                    <details>
+                        <summary class="price__item-title">
+                            <p>Оценка дома</p>
+                            <ul class="price__wrp">
+                                <li class="price__wrp-item"><p>для ипотеки</p> <p class="price__subtitle">от 3 000 руб.</p></li>
+                                <li class="price__wrp-item"><p>для суда</p> <p class="price__subtitle">от 5 000 руб.</p></li>
+                                <li class="price__wrp-item"><p>для продажи</p> <p class="price__subtitle">от 3 000 руб.</p></li>
+                                <li class="price__wrp-item"><p>для наследства</p> <p class="price__subtitle">от 2 000 руб.</p></li>
+                            </ul>
+                        </summary>
+
+                        <p class="price__item-text">Окончательная цена зависит от объёма работ и удаленности объекта от Саранска. Возможна работа без выезда (отправка и получение документов по почте).
+                            <br>
+
+                            Проведенная нами независимая оценка предоставляется в различные банки, органы опеки и попечительства, суды, нотариусам и т.д.
+                            <br>
+
+                            По всем подготовленным нами отчетам об оценке мы оказываем дальнейшее сопровождение: при необходимости вносим корректировки и защищаем в судах и т.д.</p>
+                        <p class="price__item-text">Срок: <span class="price__subtitle">от 1-3 дня.</span></p>
+                        <h4 class="price-doc__title">Документы для проведения оценки</h4>
+                        <p class="price__item-text">Для того, чтобы начать работу по оценке дома, мы просим заказчика предоставить следующие документы (при наличии):</p>
+                        <ul class="price-doc__list">
+                            <li class="price-doc__item price__subtitle">Свидетельство о государственной регистрации права</li>
+                            <li class="price-doc__item  price__subtitle">Договор купли-продажи</li>
+                            <li class="price-doc__item  price__subtitle">Выписка из ЕГРН</li>
+                            <li class="price-doc__item  price__subtitle">Технический паспорт</li>
+                            <li class="price-doc__item  price__subtitle">Технический план</li>
+                            <li class="price-doc__item  price__subtitle">Кадастровый паспорт</li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="price__item">
+                    <details>
+                        <summary class="price__item-title"><p>Оценка гаража</p>
+                            <ul class="price__wrp">
+                                <li class="price__wrp-item"><p>для суда</p> <p class="price__subtitle">от 2 000 руб.</p></li>
+                                <li class="price__wrp-item"><p>для продажи</p> <p class="price__subtitle">от 2 000 руб.</p></li>
+                                <li class="price__wrp-item"><p>для наследства</p> <p class="price__subtitle">от 1 500 руб.</p></li>
+                            </ul>
+                        </summary>
+
+                        <p class="price__item-text">Окончательная цена зависит от объёма работ и удаленности объекта от Саранска. Возможна работа без выезда (отправка и получение документов по почте).
+                            <br>
+
+                            Проведенная нами независимая оценка предоставляется в различные банки, органы опеки и попечительства, суды, нотариусам и т.д.
+                            <br>
+
+                            По всем подготовленным нами отчетам об оценке мы оказываем дальнейшее сопровождение: при необходимости вносим корректировки и защищаем в судах и т.д.</p>
+                        <p class="price__item-text">Срок: <span class="price__subtitle">от 1-2 дня.</span></p>
+                        <h4 class="price-doc__title">Документы для проведения оценки</h4>
+                        <p class="price__item-text">Для того, чтобы начать работу по оценке дома, мы просим заказчика предоставить следующие документы (при наличии):</p>
+                        <ul class="price-doc__list">
+                            <li class="price-doc__item price__subtitle">Свидетельство о государственной регистрации права</li>
+                            <li class="price-doc__item  price__subtitle">Договор купли-продажи</li>
+                            <li class="price-doc__item  price__subtitle">Выписка из ЕГРН</li>
+                            <li class="price-doc__item  price__subtitle">Технический паспорт</li>
+                            <li class="price-doc__item  price__subtitle">Технический план</li>
+                            <li class="price-doc__item  price__subtitle">Кадастровый паспорт</li>
+                            <li class="price-doc__item  price__subtitle">Членская книжка ГСК</li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="price__item">
+                    <details>
+                        <summary class="price__item-title"><p>Оценка автомобиля</p><ul class="price__wrp">
+                            <li class="price__wrp-item"><p>для суда</p> <p class="price__subtitle">от 3 000 руб.</p></li>
+                            <li class="price__wrp-item"><p>для продажи</p> <p class="price__subtitle">от 2 000 руб.</p></li>
+                            <li class="price__wrp-item"><p>для наследства</p> <p class="price__subtitle">от 2 000 руб.</p></li>
+                        </ul>
+                        </summary>
+                        <p class="price__item-text">Окончательная цена зависит от объёма работ и удаленности объекта от Саранска. Возможна работа без выезда (отправка и получение документов по почте).
+                            <br>
+
+                            Проведенная нами независимая оценка стоимости автомобилей и других транспортных средств предоставляется в различные банки, органы опеки и попечительства, суды, нотариусам и т.д.
+                            <br>
+
+                            По всем подготовленным нами отчетам об оценке мы оказываем дальнейшее сопровождение: при необходимости вносим корректировки и защищаем в судах и т.д.</p>
+                        <p class="price__item-text">Срок: <span class="price__subtitle">от 1-2 дня.</span></p>
+                        <h4 class="price-doc__title">Документы для проведения оценки</h4>
+                        <p class="price__item-text">Для того, чтобы начать работу по оценке автомобиля, мы просим заказчика предоставить следующие документы (при наличии):</p>
+                        <ul class="price-doc__list">
+                            <li class="price-doc__item price__subtitle">Технический паспорт</li>
+                            <li class="price-doc__item  price__subtitle">Свидетельство о регистрации транспортного средства</li>
+                            <li class="price-doc__item  price__subtitle">Сервисная книжка</li>
+                            <li class="price-doc__item  price__subtitle">Договор купли-продажи</li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="price__item">
+                    <details>
+                        <summary class="price__item-title">
+                            <p>Оценка оборудования и техники</p>
+                            <ul class="price__wrp">
+                            <li class="price__wrp-item"><p>для суда</p> <p class="price__subtitle">от 1 500 руб.</p></li>
+                            <li class="price__wrp-item"><p>для целей бухучета</p> <p class="price__subtitle">от 500 руб.</p></li>
+                            <li class="price__wrp-item"><p>для банка</p> <p class="price__subtitle">от 1 000 руб.</p></li>
+                            <li class="price__wrp-item"><p>для продажи</p> <p class="price__subtitle">от 1 000 руб.</p></li>
+                        </ul>
+                        </summary>
+                        <p class="price__item-text">Окончательная цена зависит от объёма работ и удаленности объекта от Саранска. Возможна работа без выезда (отправка и получение документов по почте).
+                            <br>
+
+                            Проведенная нами независимая оценка оборудования и спецтехники предоставляется в различные банки, суды и т.д.
+                            <br>
+
+                            По всем подготовленным нами отчетам об оценке мы оказываем дальнейшее сопровождение: при необходимости вносим корректировки и защищаем в судах и т.д.</p>
+                        <p class="price__item-text">Срок: <span class="price__subtitle">от 1-5 дня.</span></p>
+                        <h4 class="price-doc__title">Документы для проведения оценки</h4>
+                        <p class="price__item-text">Для того, чтобы начать работу по оценке оборудования и техники, мы просим заказчика предоставить следующие документы (при наличии):</p>
+                        <ul class="price-doc__list">
+                            <li class="price-doc__item price__subtitle">Паспорт оборудования</li>
+                            <li class="price-doc__item  price__subtitle">Документы бухгалтерского и (или) хозяйственного учета</li>
+                            <li class="price-doc__item  price__subtitle">Договора и накладные на покупку оборудования</li>
+                            <li class="price-doc__item  price__subtitle">Прочие документы, позволяющие идентифицировать объект оценки</li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="price__item">
+                    <details>
+                        <summary class="price__item-title">
+                            <p>Оценка земли</p>
+                            <ul class="price__wrp">
+                                <li class="price__wrp-item"><p>для банка</p> <p class="price__subtitle">от 2 000 руб.</p></li>
+                                <li class="price__wrp-item"><p>для суда</p> <p class="price__subtitle">от 4 000 руб.</p></li>
+                                <li class="price__wrp-item"><p>для продажи</p> <p class="price__subtitle">от 2 000 руб.</p></li>
+                                <li class="price__wrp-item"><p>для наследства</p> <p class="price__subtitle">от 2 500 руб.</p></li>
+                            </ul>
+                        </summary>
+                        <p class="price__item-text">Окончательная цена зависит от объёма работ и удаленности объекта от Саранска. Возможна работа без выезда (отправка и получение документов по почте).
+                            <br>
+
+                            Мы выполняем оценку для оспаривания кадастровой стоимости земельных участков.
+
+                            Проведенная нами независимая оценка предоставляется в банки, суды, нотариусам и т.д.
+                            <br>
+
+                            По всем подготовленным нами отчетам об оценке мы оказываем дальнейшее сопровождение: при необходимости вносим корректировки и защищаем в судах и т.д.</p>
+                        <p class="price__item-text">Срок: <span class="price__subtitle">от 1-5 дня.</span></p>
+                        <h4 class="price-doc__title">Документы для проведения оценки</h4>
+                        <p class="price__item-text">Для того, чтобы начать работу по оценке земли, мы просим заказчика предоставить следующие документы (при наличии):</p>
+                        <ul class="price-doc__list">
+                            <li class="price-doc__item price__subtitle">Свидетельство о государственной регистрации права</li>
+                            <li class="price-doc__item  price__subtitle">Договор купли-продажи или аренды</li>
+                            <li class="price-doc__item  price__subtitle">Выписка из ЕГРН</li>
+                            <li class="price-doc__item  price__subtitle">Кадастровый паспорт</li>
+                            <li class="price-doc__item  price__subtitle">Постановление органов власти о предоставлении земельного участка</li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="price__item">
+                    <details>
+                        <summary class="price__item-title">
+                            <p>Оценка акций</p>
+                            <ul class="price__wrp">
+                                <li class="price__wrp-item"><p>для наследства</p> <p class="price__subtitle">от 2 000 руб.</p></li>
+                            </ul>
+                        </summary>
+                        <p class="price__item-text">Окончательная цена зависит от объёма работ и удаленности объекта от Саранска. Возможна работа без выезда (отправка и получение документов по почте).
+                            <br>
+
+                            Проведенная нами независимая оценка предоставляется в суды, нотариусам и т.д.
+
+
+                            <br>
+
+                            По всем подготовленным нами отчетам об оценке мы оказываем дальнейшее сопровождение: при необходимости вносим корректировки и защищаем в судах и т.д.</p>
+                        <p class="price__item-text">Срок: <span class="price__subtitle">от 1-3 дня.</span></p>
+                        <h4 class="price-doc__title">Документы для проведения оценки</h4>
+                        <p class="price__item-text">Для того, чтобы начать работу по оценке ценных бумаг, мы просим заказчика предоставить следующие документы (при наличии):</p>
+                        <ul class="price-doc__list">
+                            <li class="price-doc__item price__subtitle">Выписка от реестродержателя акций</li>
+                            <li class="price-doc__item  price__subtitle">Свидетельство о смерти собственника</li>
+                            <li class="price-doc__item  price__subtitle">Паспорт наследополучателя</li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="price__item">
+                    <details>
+                        <summary class="price__item-title">
+                            <p>Оценка оружия</p>
+                            <ul class="price__wrp">
+                                <li class="price__wrp-item"><p>для наследства</p> <p class="price__subtitle">от 2 000 руб.</p></li>
+                            </ul>
+                        </summary>
+                        <p class="price__item-text">Окончательная цена зависит от объёма работ и удаленности объекта от Саранска. Возможна работа без выезда (отправка и получение документов по почте).
+                            <br>
+                            Проведенная нами независимая оценка предоставляется в суды, нотариусам и т.д.
+                            <br>
+
+                            По всем подготовленным нами отчетам об оценке мы оказываем дальнейшее сопровождение: при необходимости вносим корректировки и защищаем в судах и т.д.</p>
+                        <p class="price__item-text">Срок: <span class="price__subtitle">от 1-2 дня.</span></p>
+                        <h4 class="price-doc__title">Документы для проведения оценки</h4>
+                        <p class="price__item-text">Для того, чтобы начать работу по оценке ружья, мы просим заказчика предоставить следующие документы (при наличии):</p>
+                        <ul class="price-doc__list">
+                            <li class="price-doc__item price__subtitle">Разрешение на хранение и ношение оружия</li>
+                            <li class="price-doc__item  price__subtitle">Протокол изъятия огнестрельного оружия</li>
+                            <li class="price-doc__item  price__subtitle">Паспорт оружия</li>
+                            <li class="price-doc__item  price__subtitle">Свидетельство о смерти собственника</li>
+                            <li class="price-doc__item  price__subtitle">Паспорт наследополучателя</li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="price__item">
+                    <details>
+                        <summary class="price__item-title">
+                            <p>Оценка ущерба при ДТП</p>
+                            <ul class="price__wrp">
+                                <li class="price__wrp-item"><p>для суда</p> <p class="price__subtitle">от 4 000 руб.</p></li>
+                            </ul>
+                        </summary>
+                        <p class="price__item-text">Цена услуг по оценке утраты товарной стоимости (УТС) и оценке годных остатков определяется по договоренности с заказчиком.
+                            <br>
+                            Окончательная стоимость автомобильной экспертизы зависит от объёма работ и удаленности объекта от Саранска. Возможна работа без выезда при предоставлении достаточной информации об объеме повреждений авто при ДТП (отправка и получение документов по почте).
+                            <br>
+
+                            Мы также занимаемся независимой оценкой ущерба от повреждения автомобилей и мотоциклов при противоправных действиях, пожаре, некачественном ремонте и оказываем услуги эксперта-техника.
+                            <br>
+                            По всем подготовленным нами отчетам об оценке мы оказываем дальнейшее сопровождение: при необходимости вносим корректировки и защищаем в судах и т.д.</p>
+                        <p class="price__item-text">Срок: <span class="price__subtitle">от 1-5 дня.</span></p>
+                        <h4 class="price-doc__title">Документы для проведения оценки</h4>
+                        <p class="price__item-text">Для того, чтобы начать работу по оценке ущерба при автомобиля, мы просим заказчика предоставить следующие документы (при наличии):</p>
+                        <ul class="price-doc__list">
+                            <li class="price-doc__item price__subtitle">Справка о ДТП, которая заполняется сотрудником ГИБДД</li>
+                            <li class="price-doc__item  price__subtitle">Свидетельство о регистрации автомобиля</li>
+                            <li class="price-doc__item  price__subtitle">Выписка из ЕГРН</li>
+                            <li class="price-doc__item  price__subtitle">Техпаспорт транспортного средства</li>
+                            <li class="price-doc__item  price__subtitle">Иные документы компетентных служб по данному ДТП</li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="price__item">
+                    <details>
+                        <summary class="price__item-title">
+                            <p>Оценка ущерба при заливе</p>
+                            <ul class="price__wrp">
+                                <li class="price__wrp-item"><p>для суда</p> <p class="price__subtitle">от 5 000 руб.</p></li>
+                            </ul>
+                        </summary>
+                        <p class="price__item-text">Окончательная цена зависит от объёма работ и удаленности объекта от Саранска. Возможна работа без выезда (отправка и получение документов по почте).
+                            <br>
+
+                            По всем подготовленным нами отчетам об оценке мы оказываем дальнейшее сопровождение: при необходимости вносим корректировки и защищаем в судах и т.д.</p>
+                        <p class="price__item-text">Срок: <span class="price__subtitle">от 1-5 дня.</span></p>
+                        <h4 class="price-doc__title">Документы для проведения оценки</h4>
+                        <p class="price__item-text">Для того, чтобы начать работу по экспертизе ущерба квартиры при затоплении, мы просим заказчика предоставить следующие документы (при наличии):</p>
+                        <ul class="price-doc__list">
+                            <li class="price-doc__item price__subtitle">Акт о заливе, выданный ЖЭУ, ТСЖ, Управляющей компании и т.д.</li>
+                            <li class="price-doc__item  price__subtitle">Правоустанавливающие документы на поврежденный объект</li>
+                            <li class="price-doc__item  price__subtitle">Технический паспорт</li>
+                            <li class="price-doc__item  price__subtitle">Технический план</li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="price__item">
+                    <details>
+                        <summary class="price__item-title">
+                            <p>Оценка ущерба от пожара</p>
+                            <ul class="price__wrp">
+                                <li class="price__wrp-item"><p>для суда</p> <p class="price__subtitle">от 5 000 руб.</p></li>
+                            </ul>
+                        </summary>
+                        <p class="price__item-text">Окончательная цена зависит от объёма работ и удаленности объекта от Саранска. Возможна работа без выезда (отправка и получение документов по почте).
+                            <br>
+                            По всем подготовленным нами отчетам об оценке мы оказываем дальнейшее сопровождение: при необходимости вносим корректировки и защищаем в судах и т.д.</p>
+                        <p class="price__item-text">Срок: <span class="price__subtitle">от 1-5 дня.</span></p>
+                        <h4 class="price-doc__title">Документы для проведения оценки</h4>
+                        <p class="price__item-text">Для того, чтобы начать работу по экспертизе ущерба при пожаре, мы просим заказчика предоставить следующие документы (при наличии):</p>
+                        <ul class="price-doc__list">
+                            <li class="price-doc__item price__subtitle">Акт о пожаре</li>
+                            <li class="price-doc__item  price__subtitle">Правоустанавливающие документы на поврежденный объект</li>
+                            <li class="price-doc__item  price__subtitle">Технический паспорт</li>
+                            <li class="price-doc__item  price__subtitle">Технический план</li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="price__item">
+                    <details>
+                        <summary class="price__item-title">
+                            <p>Оценка для оспаривания кадастровой стоимости</p>
+                            <ul class="price__wrp">
+                                <li class="price__wrp-item"><p>земельный участок</p> <p class="price__subtitle">от 13 000 руб.</p></li>
+                                <li class="price__wrp-item"><p>строение</p> <p class="price__subtitle">от 15 000 руб.</p></li>
+                            </ul>
+                        </summary>
+                        <p class="price__item-text">Окончательная цена зависит от объёма работ и удаленности объекта от Саранска. Возможна работа без выезда (отправка и получение документов по почте).
+                            <br>
+                            Мы работаем по Саранску и Мордовии, выезд эксперта — оценщика возможен в любую точку региона.
+
+                            Размер уплачиваемых налогов на имущество и землю напрямую зависит от кадастровой стоимости, которая определялась массово, и, как показывает практика, очень часто завышена, что ведет к переплате налога на 50-90%. Мы предлагаем законно уменьшить эти платежи, проведя экспертизу кадастровой стоимости земельного участка или строения и обжаловав её.
+                            <br>
+                            При необходимости мы оказываем комплекс услуг по оспариванию кадастровой стоимости, включающий проведение экспертизы, подачу документов в кадастровую палату и представительство в суде.
+
+                            <br>
+                            Мы также оказываем услуги по снижению размеров арендных платежей на земельные участки, находящиеся в муниципальной собственности, оспаривая их кадастровую стоимость.</p>
+                        <p class="price__item-text">Срок: <span class="price__subtitle">от 3 дней.</span></p>
+                        <h4 class="price-doc__title">Документы для проведения оценки</h4>
+                        <p class="price__item-text">Для того, чтобы начать работу, мы просим заказчика предоставить следующие документы:</p>
+                        <ul class="price-doc__list">
+                            <li class="price-doc__item price__subtitle">Правоустанавливающие документы на объекты недвижимости</li>
+                            <li class="price-doc__item  price__subtitle">Кадастровые номера</li>
+                        </ul>
+                    </details>
+                </li>
+                <li class="price__item">
+                    <details>
+                        <summary class="price__item-title">
+                            <p>Строительно — техническая экспертиза</p>
+                            <ul class="price__wrp">
+                                <li class="price__wrp-item"><p>стоимость по договору</p> <p class="price__subtitle">от 8 000 руб.</p></li>
+                            </ul>
+                        </summary>
+                        <p class="price__item-text">Окончательная цена зависит от объёма работ и удаленности объекта от Саранска. Возможна работа без выезда (отправка и получение документов по почте).
+                            Мы работаем по Саранску и Мордовии, выезд эксперта возможен в любую точку региона. Наши эксперты всегда готовы отстоять интересы заказчика в суде.
+                            <br>
+                            Мы проводим судебные строительные экспертизы для решения вопросов, требующих специальных знаний в сфере проектирования, реконструкции, строительства, ремонта, расчета строительного ущерба и восстановительных работ. Также мы предлагаем услуги по проведению землеустроительных экспертиз.
+                            <br>
+                            Строительно — техническая экспертиза помогает выявить нарушения, допущенные в процессе проектирования, строительства, эксплуатации и ремонта объектов недвижимости.</p>
+                        <p class="price__item-text">Срок: <span class="price__subtitle">от 3 дней.</span></p>
+                        <h4 class="price-doc__title">Документы для проведения оценки</h4>
+                        <p class="price__item-text">Для того, чтобы начать работу, мы просим заказчика предоставить следующие документы:</p>
+                        <ul class="price-doc__list">
+                            <li class="price-doc__item price__subtitle">Правоустанавливающие документы на объекты недвижимости</li>
+                            <li class="price-doc__item  price__subtitle">Техническая документация на объекты экспертизы</li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </section>
+        <section class="services container">
+            <h2 class="benefits__title">Мы предлагаем нижеследующие виды экспертиз и оценки.</h2>
+            <p class="services__text">Наша организация предоставляет свои услуги физическим и юридическим лицам, органам внутренних дел, следственным органам, судам всех уровней и государственным органам.</p>
+            <div class="services__wrp">
+                <ul class="services__list">
+                    <h4 class="services__list-title">Экспертизы:</h4>
+                    <li class="services__item">строительно-техническая экспертиза;</li>
+                    <li class="services__item">почерковедческая экспертиза;</li>
+                    <li class="services__item">пожарно-техническая экспертиза;</li>
+                    <li class="services__item">землеустроительная экспертиза;</li>
+                    <li class="services__item">автотехническая экспертиза; </li>
+                    <li class="services__item">трасологическая экспертиза;</li>
+                    <li class="services__item">товароведческая экспертиза;</li>
+                    <li class="services__item">финансово-экономическая экспертиза;</li>
+                    <li class="services__item">техническая экспертиза документов.</li>
+                </ul>
+                <ul class="services__list">
+                    <h4 class="services__list-title">Оценка:</h4>
+                    <li class="services__item">оценка транспорта;</li>
+                    <li class="services__item">оценка ущерба транспорта после ДТП;</li>
+                    <li class="services__item">оценка ущерба от залива или пожара;</li>
+                    <li class="services__item">оценка недвижимости (квартиры, дома, земля);</li>
+                    <li class="services__item">оценка бизнеса;</li>
+                    <li class="services__item">оценка оборудования;</li>
+                    <li class="services__item">оценка объектов интеллектуальной собственности;</li>
+                    <li class="services__item">оспаривание кадастровой стоимости</li>
+                </ul>
+            </div>
+        </section>
+        <section class="about container">
+            <h2 class="benefits__title">О компании</h2>
+            <div class="about__wrp">
+                <p class="about__text">За это время профессионализм и квалификация сотрудников постоянно повышались, география клиентов и партнеров компании расширилась с одного города до нескольких регионов.
+                    <br><br><br>
+                    Оценка недвижимости, автотранспорта и объектов строительства в Саранске, а так же в других районах Республики Мордовия, осуществляется штатными квалифицированными оценщиками, экспертами-техниками автотранспорта, а так же экспертами-строителями имеющими соответствующее образование и квалификацию.
+                    <br><br><br>
+                    По всем видам оказываемых услуг организация проводит оценку и экспертизы в внесудебном и в судебном порядке (судебные экспертизы).</p>
+                <img src="./img/about.jpeg" alt="Оценка недвижимости, автотранспорта и объектов строительства в Саранске " width="50%">
+            </div>
+        </section>
+        <section class="contact container">
+            <h2 class="benefits__title">Наши контакты</h2>
+            <p class="contact__text">Находимся в Саранске, работаем по всей Мордовии</p>
+            <div class="contact__wrp">
+                <div class="contact__map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2334.1775599555835!2d45.16630421587057!3d54.194640080165534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414408c668a702fb%3A0xe94ffb7434899695!2z0YPQuy4g0JLQsNGB0LXQvdC60L4sINC0LjM2LCDQutCw0LEuNiwg0KHQsNGA0LDQvdGB0LosINCg0LXRgdC_LiDQnNC-0YDQtNC-0LLQuNGPLCA0MzAwMzA!5e0!3m2!1sru!2sru!4v1643462598460!5m2!1sru!2sru" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="contact__wrapper">
+                    <div class="contact__address">
+                        <i class="fa fa-map-marker contact__icon" aria-hidden="true"></i>
+                        <h4 class="contact__item-title">
+                            Адрес и время работы
+                            <ul>
+                                <li class="contact__item-text"> г.Саранск, ул.Васенко, д.36, оф.6</li>
+                                <li class="contact__item-text">ПН — ПТ с 9:00 до 18:00 часов</li>
+                            </ul>
+                        </h4>
+                    </div>
+                    <div class="contact__phone">
+                        <i class="fa fa-phone contact__icon" aria-hidden="true"></i>
+                        <h4 class="contact__item-title">Телефон
+                            <ul>
+                                <li class="contact__item-text">8 (927) 276-62-00</li>
+                                <li class="contact__item-text">8 (927) 275-50-54</li>
+                            </ul>
+                        </h4>
+                    </div>
+                    <div class="contact__online">
+                        <i class="fa fa-comments-o contact__icon" aria-hidden="true"></i>
+                        <h4 class="contact__item-title">Онлайн связь
+                            <ul>
+                                <li class="contact__item-text">E-Mail: shabaev.a@mail.ru</li>
+                                <li class="contact__item-text">8 (927) 275-50-54</li>
+                                <li class="contact__item-text">(WhatsApp, Viber, Telegram)</li>
+                            </ul>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__wrp container">
+            <h2 class="visually-hidden">независимую экспертизу различных видов ущерба, оценку рыночной стоимости объектов недвижимости, движимого имущества и интеллектуальной собственности, а также решают другие оценочно — экспертные задачи</h2>
+            <ul class="footer__list">
+                <h3 class="footer__list-title">О компании</h3>
+                <li>Бюро судебных экспертиз</li>
+                <li>ОГРН 1201300000747, ИНН 1327035589</li>
+                <li>430030, РМ, г.Саранск, ул.Васенко, д.36, оф.6</li>
+            </ul>
+            <ul class="footer__list">
+                <h3 class="footer__list-title">Услуги</h3>
+                <li>Оценка транспорта</li>
+                <li>Оценка недвижимости</li>
+                <li>Оценка бизнеса</li>
+            </ul>
+            <ul class="footer__list">
+                <h3 class="footer__list-title">Контакты</h3>
+                <li>8 (927) 275-50-54</li>
+                <li>E-Mail: shabaev.a@mail.ru</li>
+            </ul>
+        </section>
+    </footer>
 </body>
 </html>

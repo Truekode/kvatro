@@ -1,0 +1,71 @@
+.baner {
+  color: white;
+  padding-top: 60px;
+  padding-bottom: 65px;
+  background-image: url("../img/baner.jpeg");
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+
+  &__wrp {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 15px;
+
+  }
+
+  &__title {
+    position: relative;
+    margin-left: 25px;
+    width: 50%;
+    font-size: 45px;
+    line-height: 40px;
+    font-weight: 600;
+  }
+
+  &__title:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    background: #1ab51a;
+    left: -22px;
+  }
+
+  &__text {
+    @include font(20px,1.2em,500);
+    margin-top: 30px;
+    width: 50%;
+  }
+
+  &__item {
+    position: relative;
+    @include font(16px,19px,400);
+    margin-top: 15px;
+    margin-left: 30px;
+  }
+
+  &__item:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: -25px;
+    background-image: url("../img/check.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &__btn {
+    margin-top: 30px;
+    width: 300px;
+    height: 70px;
+    box-sizing: border-box;
+    background: #1ab51a;
+    border-radius: 60px;
+    font-size: 19px;
+    color: white;
+    line-height: 22px;
+    padding: 24px 30px;
+  }
+}

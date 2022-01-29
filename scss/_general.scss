@@ -23,16 +23,10 @@ a:active {
   clip: rect(0 0 0 0)
 }
 
-@font-face {
-  font-family: 'PT Sans';
-  src: url('../font/PTSans-Regular.ttf'),
-  url('../font/PTSans-Bold.ttf');
-  font-style: normal;
-}
 
 body {
-  @include font(22px, 24px);
-  font-family: 'PT Sans';
+  @include font(22px, 24px, 300);
+  font-family: 'Lato', sans-serif;
 
 }
 .container {

@@ -1,0 +1,90 @@
+.price {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__subtitle {
+    color: #1ab51a;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__item-title {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__item-title:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 11px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: -10px;
+  }
+
+  &__list {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  &__item > details {
+    margin-bottom: 30px;
+    border: 1px solid #1ab51a;
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 100%;
+    padding: 30px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__wrp {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  &__item-text {
+    margin-top: 30px;
+    font-size: 16px;
+  }
+
+  &-doc__list {
+    margin-top: 15px;
+    list-style-type: circle;
+  }
+
+  &-doc__item {
+    margin-left: 30px;
+    font-size: 16px;
+  }
+
+  &-doc__title {
+    margin-top: 20px;
+    color: #666;
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  &__wrp-item {
+    width: 90%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+  }
+}

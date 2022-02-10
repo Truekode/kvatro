@@ -16,6 +16,10 @@
     margin-right: 50px;
     display: flex;
     grid-column-gap: 15px;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__link {

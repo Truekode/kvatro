@@ -12,6 +12,9 @@
     flex-direction: column;
     grid-row-gap: 15px;
 
+    @include mobile {
+      align-items: center;
+    }
   }
 
   &__title {
@@ -21,6 +24,10 @@
     font-size: 45px;
     line-height: 40px;
     font-weight: 600;
+
+    @include mobile {
+      width: 90%;
+    }
   }
 
   &__title:before {
@@ -36,6 +43,10 @@
     @include font(20px,1.2em,500);
     margin-top: 30px;
     width: 50%;
+
+    @include mobile {
+      width: 90%;
+    }
   }
 
   &__item {
@@ -58,6 +69,7 @@
 
   &__btn {
     margin-top: 30px;
+    border: none;
     width: 300px;
     height: 70px;
     box-sizing: border-box;

@@ -12,10 +12,18 @@
     width: 80%;
     display: flex;
     justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   &__list {
     list-style-type: square;
+
+    @include mobile {
+      margin-top: 30px;
+    }
   }
 
   &__item {
@@ -28,6 +36,10 @@
     margin-top: 30px;
     text-align: center;
     width: 70%;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
 }

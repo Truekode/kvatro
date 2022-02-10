@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -459,6 +460,137 @@ body {
   color: #fff;
   line-height: 1.7em;
   font-weight: 500;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.prices__list {
+  margin-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.prices__list:nth-child(odd) {
+  background: #F2F2F2;
+}
+.prices__title {
+  width: 90%;
+  text-align: left;
+  font-weight: 600;
+  font-size: 30px;
+  color: #333333;
+  line-height: 1.4em;
+  margin-bottom: 30px;
+}
+.prices__item-text {
+  text-align: left;
+  margin-top: 30px;
+  width: 90%;
+}
+.prices__list {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.prices__item {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 3fr repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 1px solid #E0E0E0;
+  margin-bottom: 5px;
+}
+.prices-green {
+  color: #1ab51a;
+}
+.prices-bold {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.prices-right {
+  text-align: right;
+  font-size: 1rem;
+}
+
+.whatsapp-button {
+  position: fixed;
+  right: 13px;
+  bottom: 90px;
+  transform: translate(-50%, -50%);
+  background: #25D366;
+  /*цвет кнопки*/
+  border-radius: 50%;
+  width: 55px;
+  /*ширина кнопки*/
+  height: 55px;
+  /*высота кнопки*/
+  color: #fff;
+  text-align: center;
+  line-height: 53px;
+  /*центровка иконки в кнопке*/
+  font-size: 35px;
+  /*размер иконки*/
+  z-index: 9999;
+}
+
+.whatsapp-button a {
+  color: #fff;
+}
+
+.whatsapp-button:before,
+.whatsapp-button:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  border: 50%;
+  border: 1px solid #25D366;
+  /*цвет анимированных волн от кнопки*/
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+  backface-visibility: hidden;
+}
+
+.whatsapp-button:after {
+  animation-delay: 0.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+@media (max-width: 800px) {
+  .whatsapp-button {
+    bottom: 5px;
+    /*отступ кнопки снизу от экрана*/
+    left: 70px;
+    /*отступ кнопки слева от экрана(right - справа)*/
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

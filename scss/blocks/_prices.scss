@@ -14,7 +14,7 @@
     align-items: center;
   }
 
-  &__list:nth-child(odd) {
+  &__list:nth-child(even) {
     background: #F2F2F2;
   }
 

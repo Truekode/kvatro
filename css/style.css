@@ -557,7 +557,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.prices__list:nth-child(odd) {
+.prices__list:nth-child(even) {
   background: #F2F2F2;
 }
 .prices__title {

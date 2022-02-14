@@ -31,7 +31,7 @@
     width: 60%;
     box-sizing: border-box;
     padding: 30px;
-    border: 1px solid gray;
+    
 
     @include mobile {
       width: 100%;
@@ -57,7 +57,7 @@
     align-items: center;
     box-sizing: border-box;
     padding: 20px;
-    border: 1px solid gray;
+    
   }
 
   &__phone {
@@ -65,7 +65,7 @@
     align-items: center;
     box-sizing: border-box;
     padding: 20px;
-    border: 1px solid gray;
+    
   }
 
   &__online {
@@ -73,7 +73,7 @@
     align-items: center;
     box-sizing: border-box;
     padding: 20px;
-    border: 1px solid gray;
+    
   }
 
 
